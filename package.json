@@ -1,0 +1,36 @@
+{
+  "name": "yuumi-share",
+  "version": "1.0.0",
+  "description": "easy-to-use js functions sharing tool",
+  "main": "dist/yuumi-share.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "dev": "node scripts/dev.js -d",
+    "build": "node scripts/build.js -p",
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "yuumi-share",
+    "yuumi"
+  ],
+  "author": "dwyw",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-replace": "^2.3.3",
+    "@types/jest": "^26.0.14",
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "execa": "^4.0.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "minimist": "^1.2.5",
+    "rollup": "^2.28.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "ts-jest": "^29.1.1",
+    "tslib": "^2.0.1",
+    "typescript": "^5.2.2"
+  }
+}

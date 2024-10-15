@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "sourceMap": false,
+    "allowJs": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "target": "es6",
+    "module": "es6",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "rootDir": "./src"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": []
+}
