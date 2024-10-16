@@ -78,3 +78,20 @@ export function numberUpperCase(value: number | string) {
   return [head, filter(integerStr), filter(decimailStr)].join("")
 }
 
+/**
+ * 数字精度处理
+ * (toFixed会有精度丢失问题 2.55.toFixed(1) => 2.5)
+ * @param value 要处理的数字
+ * @param accuracy 精度
+ */
+export function numberFixed(value: number, accuracy = 2) {
+  // 如果超过了最大或最小安全数值，直接返回
+  if (value > Number.MAX_SAFE_INTEGER || value < Number.MIN_SAFE_INTEGER) return value
+
+  // 如果放大后超过了最大或最小安全数值，直接返回
+  const scaleValue = Math.pow(10, accuracy)
+  const _value = value * scaleValue
+  if (_value > Number.MAX_SAFE_INTEGER || _value < Number.MIN_SAFE_INTEGER) return value
+
+  return Math.round(_value) / scaleValue
+}

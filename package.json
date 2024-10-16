@@ -1,6 +1,6 @@
 {
   "name": "yuumi-share",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "easy-to-use js functions sharing tool",
   "main": "dist/yuumi-share.js",
   "types": "types/index.d.ts",
